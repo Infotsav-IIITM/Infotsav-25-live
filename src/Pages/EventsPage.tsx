@@ -5,6 +5,7 @@ import Domain from "@/Components/EventsPage/Domain";
 import Hero from "@/Components/EventsPage/Hero-Events";
 import Footer from "@/Components/Other/Footer";
 import { FlagshipEventsCarousel } from "@/Components/EventsPage/FlagshipEventsCarousel";
+import { useNavigate } from "react-router-dom";
 
 // Extend the Window interface to include __DOMAIN_EVENTS__
 declare global {
@@ -38,8 +39,29 @@ const EventsPage = () => {
     window.__DOMAIN_EVENTS__ = domainJsons.map((domain) => domain.events);
   }
 
+  const navigate = useNavigate();
+
   return (
     <div>
+      <button
+        onClick={() => navigate("/")}
+        className="fixed top-8 left-8 z-20 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full p-3 hover:bg-white/20 transition-all duration-300 group"
+        aria-label="Back to Home"
+      >
+        <svg
+          className="w-6 h-6 text-white group-hover:text-gray-200 transition-colors"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+      </button>
       <Hero />
       <div className="h-auto w-full py-10 md:py-30 px-[8vw] space-y-15 md:space-y-40">
         {/* Flagship Events Section */}

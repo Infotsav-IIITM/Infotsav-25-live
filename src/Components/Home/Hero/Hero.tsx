@@ -2,6 +2,7 @@ import SvgImageMap from './SvgImageMap';
 import { useMediaQuery } from 'react-responsive';
 import useMobileMenuStore from '@/stores/MobileMenuStore';
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 interface Area {
     name: string;
@@ -89,6 +90,7 @@ const registerArea: Area[] = [
 
 const Hero = () => {
     const [scrollY, setScrollY] = useState(0);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -96,7 +98,12 @@ const Hero = () => {
         };
 
         window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            // Clean up any transition classes when component unmounts
+            document.body.classList.remove('page-transitioning');
+            document.body.classList.remove('page-transitioning-left');
+        };
     }, []);
 
     const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
@@ -107,6 +114,36 @@ const Hero = () => {
         if (isMobile) {
             toggleMobileMenu();
         }
+    };
+
+    const handleSponsorsClick = () => {
+        // Add a class to the body for the transition effect
+        document.body.classList.add('page-transitioning');
+        
+        // Navigate after a short delay to show the transition
+        setTimeout(() => {
+            navigate('/sponsors');
+        }, 150);
+    };
+
+    const handleEventsClick = () => {
+        // Add a class to the body for the left transition effect
+        document.body.classList.add('page-transitioning-left');
+        
+        // Navigate after a short delay to show the transition
+        setTimeout(() => {
+            navigate('/events');
+        }, 150);
+    };
+
+    const handleAmbassadorClick = () => {
+        // Add a class to the body for the left transition effect
+        document.body.classList.add('page-transitioning-left');
+        
+        // Navigate after a short delay to show the transition
+        setTimeout(() => {
+            navigate('/ambassador');
+        }, 150);
     };
 
     // Parallax calculations - reduce effect on mobile for better performance
@@ -189,6 +226,15 @@ const Hero = () => {
                         alt="Interactive Map"
                         className="w-full h-auto max-sm:hidden"
                         areas={areas}
+                        onAreaClick={(area) => {
+                            if (area.href === '/sponsors') {
+                                handleSponsorsClick();
+                            } else if (area.href === '/events') {
+                                handleEventsClick();
+                            } else if (area.href === '/ambassador') {
+                                handleAmbassadorClick();
+                            }
+                        }}
                     />
                 </div>
                 <div className="absolute bottom-0 scale-115 left-[17%] z-30 w-48">
