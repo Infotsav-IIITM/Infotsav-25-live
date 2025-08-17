@@ -5,4 +5,4 @@ User-agent: *
 Allow: /
 
 # Specify the location of the sitemap
-Sitemap: https://infotsav.com/sitemap.xml
+Sitemap: https://www.infotsav.com/sitemap.xml
