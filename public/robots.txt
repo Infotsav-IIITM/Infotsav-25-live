@@ -1,14 +1,8 @@
-User-agent: Googlebot
-Disallow: 
-User-agent: googlebot-image
-Disallow: 
-User-agent: googlebot-mobile
-Disallow: 
-User-agent: MSNBot
-Disallow: 
-User-agent: Slurp
-Disallow: 
+# robots.txt for https://infotsav.com
+
 User-agent: *
-Disallow: 
-Crawl-delay: 10
-Sitemap: https://www.infotsav.com/sitemap.xml
+# Allow all crawlers access to the site
+Allow: /
+
+# Specify the location of the sitemap
+Sitemap: https://infotsav.com/sitemap.xml
