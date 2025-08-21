@@ -82,13 +82,10 @@
         "fee": 0,
         "date": "2025-10-12",
         "img": "https://res.cloudinary.com/dih6gwkau/image/upload/v1724880079/droneshot_aeqnwb.png",
-        "url": "https://unstop.com/competitions/droneshot-infotsav24-atal-bihari-vajpayee-indian-institute-of-information-technology-and-management-abv-iii-1146005",
+        "url": "",
         "prize": "50k",
         "contact": [
             {
-                "name": "Uajjawal Sharma",
-                "phone": "8769445541",
-                "email": "events@infotsav.in"
             }
         ],
         "description": {
@@ -128,24 +125,10 @@
         "fee": 0,
         "date": "2025-10-11",
         "img": "https://res.cloudinary.com/dih6gwkau/image/upload/v1724434512/blazing_wheel_stuwv6.jpg",
-        "url": "https://unstop.com/competitions/blazing-wheels-infotsav24-atal-bihari-vajpayee-indian-institute-of-information-technology-and-management-ab-1142236",
+        "url": "",
         "prize": "50k",
         "contact": [
-            {
-                "name": "Uajjawal Sharma",
-                "phone": "8769445541",
-                "email": "events@infotsav.in"
-            },
-            {
-                "name": "Anisha Khairnar",
-                "phone": "7387797094",
-                "email": "events@infotsav.in"
-            },
-            {
-                "name": "Rohit Kumawat",
-                "phone": "9130660628",
-                "email": "events@infotsav.in"
-            }
+            
         ],
         "description": {
             "overview": "Participate in Blazing Wheels and showcase your robot’s racing capabilities. This event features a challenging course where teams must demonstrate their robots' speed and maneuverability.",

@@ -85,6 +85,7 @@ const EventsPage = () => {
             cards={domain.events.map((event: any) => ({
               title: event.name,
               description: event.about,
+              url: event.url,
             }))}
             currentIndex={domainIndices[idx]}
             setCurrentIndex={(cardIdx: number) => setDomainIndex(idx, cardIdx)}

@@ -5,6 +5,7 @@ import ArrowNavButton from "./ArrowNavButton";
 interface CardData {
   title: string;
   description: string;
+  url: string;
 }
 
 interface DomainProps {
@@ -50,34 +51,40 @@ const Domain: React.FC<DomainProps> = ({
   }, []);
 
   // Scroll to a specific VIRTUAL index
-  const scrollToVirtualIndex = React.useCallback((vIdx: number, smooth = true) => {
-    const scroller = scrollerRef.current;
-    if (!scroller) return;
-    isProgrammaticScroll.current = true;
-    scroller.scrollTo({
-      left: getScrollLeftForVirtualIndex(vIdx),
-      behavior: smooth ? "smooth" : "auto",
-    });
-    virtualIndexRef.current = vIdx;
-    window.setTimeout(() => (isProgrammaticScroll.current = false), 400);
-  }, [getScrollLeftForVirtualIndex]);
+  const scrollToVirtualIndex = React.useCallback(
+    (vIdx: number, smooth = true) => {
+      const scroller = scrollerRef.current;
+      if (!scroller) return;
+      isProgrammaticScroll.current = true;
+      scroller.scrollTo({
+        left: getScrollLeftForVirtualIndex(vIdx),
+        behavior: smooth ? "smooth" : "auto",
+      });
+      virtualIndexRef.current = vIdx;
+      window.setTimeout(() => (isProgrammaticScroll.current = false), 400);
+    },
+    [getScrollLeftForVirtualIndex]
+  );
 
   // Scroll to the nearest virtual index representing the given REAL index
-  const scrollToIndex = React.useCallback((realIdx: number, smooth = true) => {
-    const currentV = virtualIndexRef.current || BASE_OFFSET + currentIndex;
-    const candidate = BASE_OFFSET + realIdx; // middle loop
-    const candidates = [candidate - L, candidate, candidate + L];
-    let best = candidates[0];
-    let bestDist = Math.abs(candidates[0] - currentV);
-    for (let i = 1; i < candidates.length; i++) {
-      const d = Math.abs(candidates[i] - currentV);
-      if (d < bestDist) {
-        best = candidates[i];
-        bestDist = d;
+  const scrollToIndex = React.useCallback(
+    (realIdx: number, smooth = true) => {
+      const currentV = virtualIndexRef.current || BASE_OFFSET + currentIndex;
+      const candidate = BASE_OFFSET + realIdx; // middle loop
+      const candidates = [candidate - L, candidate, candidate + L];
+      let best = candidates[0];
+      let bestDist = Math.abs(candidates[0] - currentV);
+      for (let i = 1; i < candidates.length; i++) {
+        const d = Math.abs(candidates[i] - currentV);
+        if (d < bestDist) {
+          best = candidates[i];
+          bestDist = d;
+        }
       }
-    }
-    scrollToVirtualIndex(best, smooth);
-  }, [BASE_OFFSET, currentIndex, L, scrollToVirtualIndex]);
+      scrollToVirtualIndex(best, smooth);
+    },
+    [BASE_OFFSET, currentIndex, L, scrollToVirtualIndex]
+  );
 
   const autoScroll = React.useCallback(() => {
     // Always use the latest index for autoscroll
@@ -135,21 +142,21 @@ const Domain: React.FC<DomainProps> = ({
   }, [currentIndex, scrollToIndex, startAutoScroll]);
 
   const goToPrevious = () => {
-  const next = currentIndex === 0 ? L - 1 : currentIndex - 1;
-  setCurrentIndex(next);
-  scrollToIndex(next);
-  resetAutoScroll(); // Reset timer on manual navigation
-  // Update virtualIndexRef so autoscroll resumes from here
-  virtualIndexRef.current = BASE_OFFSET + next;
+    const next = currentIndex === 0 ? L - 1 : currentIndex - 1;
+    setCurrentIndex(next);
+    scrollToIndex(next);
+    resetAutoScroll(); // Reset timer on manual navigation
+    // Update virtualIndexRef so autoscroll resumes from here
+    virtualIndexRef.current = BASE_OFFSET + next;
   };
 
   const goToNext = () => {
-  const next = currentIndex === L - 1 ? 0 : currentIndex + 1;
-  setCurrentIndex(next);
-  scrollToIndex(next);
-  resetAutoScroll(); // Reset timer on manual navigation
-  // Update virtualIndexRef so autoscroll resumes from here
-  virtualIndexRef.current = BASE_OFFSET + next;
+    const next = currentIndex === L - 1 ? 0 : currentIndex + 1;
+    setCurrentIndex(next);
+    scrollToIndex(next);
+    resetAutoScroll(); // Reset timer on manual navigation
+    // Update virtualIndexRef so autoscroll resumes from here
+    virtualIndexRef.current = BASE_OFFSET + next;
   };
 
   // Update currentIndex based on scroll position
@@ -215,15 +222,31 @@ const Domain: React.FC<DomainProps> = ({
       if (scrollEndTimerRef.current) clearTimeout(scrollEndTimerRef.current);
       if (restartTimerRef.current) clearTimeout(restartTimerRef.current);
     };
-  }, [currentIndex, setCurrentIndex, cards.length, L, startAutoScroll, getScrollLeftForVirtualIndex]);
+  }, [
+    currentIndex,
+    setCurrentIndex,
+    cards.length,
+    L,
+    startAutoScroll,
+    getScrollLeftForVirtualIndex,
+  ]);
 
   // Helper to generate unique card IDs
   const getCardId = (idx: number) =>
     `${domainName.replace(/\s+/g, "-").toLowerCase()}-card-${idx}`;
 
   // Placeholder register handler
+    // const handleRegister = (cardIdx: number) => {
+    //   alert(`Register for ${cards[cardIdx].title}`);
+    // };
+
   const handleRegister = (cardIdx: number) => {
-    alert(`Register for ${cards[cardIdx].title}`);
+    const eventUrl = cards[cardIdx].url;
+    if (eventUrl) {
+      window.open(eventUrl, "_blank"); // opens in a new tab
+    } else {
+      alert("Registrations Opening Soon!!");
+    }
   };
 
   return (
@@ -237,7 +260,8 @@ const Domain: React.FC<DomainProps> = ({
       <div
         className="relative h-[400px] sm:h-[520px] md:h-[600px] w-[98vw] sm:w-[90%] max-w-[1400px] flex items-center justify-center overflow-x-hidden"
         onMouseEnter={stopAutoScroll}
-        onMouseLeave={startAutoScroll}>
+        onMouseLeave={startAutoScroll}
+      >
         {/* Fade overlays - hidden on mobile, narrower on sm */}
         <div
           className="hidden sm:block pointer-events-none absolute left-0 top-0 h-full w-6 sm:w-16 md:w-32 z-20"
@@ -270,7 +294,8 @@ const Domain: React.FC<DomainProps> = ({
             onMouseDown={stopAutoScroll}
             onWheel={stopAutoScroll}
             onTouchStart={stopAutoScroll}
-            onTouchEnd={startAutoScroll}>
+            onTouchEnd={startAutoScroll}
+          >
             {virtualCards.map((card, vIdx) => (
               <div
                 key={vIdx}
@@ -282,7 +307,8 @@ const Domain: React.FC<DomainProps> = ({
                   vIdx % L === currentIndex
                     ? "scale-[1.03]"
                     : "scale-[0.96] opacity-90"
-                }`}>
+                }`}
+              >
                 <Card
                   id={getCardId(vIdx % L)}
                   title={card.title}
