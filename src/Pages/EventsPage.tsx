@@ -1,6 +1,8 @@
 import { useState } from "react";
 import managerialEvents from "@/Constants/Events/ManagerialEvents.json";
 import roboticsEvents from "@/Constants/Events/RoboticsEvents.json";
+import technicalEvents from "@/Constants/Events/TechnicalEvents.json";
+import culturalEvents from "@/Constants/Events/CulturalEvents.json";
 import Domain from "@/Components/EventsPage/Domain";
 import Hero from "@/Components/EventsPage/Hero-Events";
 import Footer from "@/Components/Other/Footer";
@@ -15,8 +17,10 @@ declare global {
 }
 
 const domainJsons = [
-  { domainName: "Managerial Events", events: managerialEvents },
+  { domainName: "Technical Events", events: technicalEvents },
   { domainName: "Robotics Events", events: roboticsEvents },
+  { domainName: "Managerial Events", events: managerialEvents },
+  { domainName: "Cultural Events", events: culturalEvents }
 ];
 
 const EventsPage = () => {
@@ -81,6 +85,7 @@ const EventsPage = () => {
             cards={domain.events.map((event: any) => ({
               title: event.name,
               description: event.about,
+              url: event.url,
             }))}
             currentIndex={domainIndices[idx]}
             setCurrentIndex={(cardIdx: number) => setDomainIndex(idx, cardIdx)}

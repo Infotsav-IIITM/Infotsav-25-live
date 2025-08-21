@@ -1,307 +1,149 @@
 [
     {
-        "id": 7,
-        "name": "Mega Robo War",
-        "category": "Robotics",
-        "about": "A battle where powerful robots face off in an arena, aiming to overpower their opponent within a fixed time duration.",
+        "id": 1,
+        "name": "Hackatron",
+        "category": "Technical",
+        "about": "A flagship hackathon challenging coders to solve real-life problems by developing innovative websites, apps, or desktop solutions.",
         "fee": 0,
-        "date": "2024-10-20",
-        "img": "https://res.cloudinary.com/dih6gwkau/image/upload/v1724434487/robowars_gwtcel.jpg",
-        "url": "https://unstop.com/competitions/robowars-mega-infotsav24-atal-bihari-vajpayee-indian-institute-of-information-technology-and-management-abv-1141536",
-        "prize": "65k",
+        "date": "2025-10-10",
+        "prize": "250k",
+        "img": "https://res.cloudinary.com/dih6gwkau/image/upload/v1724882920/Hackathon_banner_zyetj3.webp",
+        "url":"https://unstop.com/hackathons/hackatron-infotsav25-atal-bihari-vajpayee-indian-institute-of-information-technology-and-management-1543329",
         "contact": [
             {
-                "name": "Uajjawal Sharma",
-                "phone": "8769445541",
-                "email": "events@infotsav.in"
+                "name": "Mradul Tiwari",
+                "phone": "8881132265",
+                "email": "mradultiwari1708@gmail.com"
             },
             {
-                "name": "Kiran Meena",
-                "phone": "9079789957",
-                "email": "events@infotsav.in"
+                "name": "Avan Sahu",
+                "phone": "9893102491",
+                "email": "avan.sahu0987@gmail.com"
+            },
+            {
+                "name": "Ansh Saxena",
+                "phone":"9913188186",
+                "email": "anshwww@gmail.com"
+
             }
         ],
         "description": {
-            "overview": "The Mega Robo War is the ultimate battle where two powerful robots face off in a high-stakes arena fight. The goal is to overpower the opponent by pushing them out of the arena or dropping them into a pit within a fixed time duration.",
+            "overview": "Hackatron is one of our flagship hackathon events, attracting widespread enthusiasm and huge participation in previous years. This hackathon provides a platform for coders, software programmers, and developers to build and design something unconventional. Participants will be tasked with solving nerve-wracking problem statements and developing a website, Android app, or desktop app within a limited time period, based on real-life problems.",
             "rules": {
-                "megawars": {
-                    "bot_dimensions_and_fabrication": [
-                        "The initial dimension of the robot should not exceed 65cm x 65cm x 45cm. Once the match starts, there is no limitation on robot dimensions.",
-                        "No machine component should intentionally detach during the battle.",
-                        "The robot's weight should not exceed 55 kg.",
-                        "In the case of a wireless robot, the weight will be counted as 0.8 times the actual weight.",
-                        "Readymade gearboxes, parts, chassis, control circuits, and remote controls can be used."
-                    ],
-                    "battery_and_power": [
-                        "The machine must be powered electrically only; the use of IC engines in any form is not allowed.",
-                        "Batteries must be sealed, immobilized-electrolyte types (such as gel cells, lithium, NiCad, NiMH, or dry cells).",
-                        "The electrical voltage at any point in the machine should not exceed 40 V DC/AC.",
-                        "230V AC power will be provided for wired bots.",
-                        "In the case of wireless robots, batteries should be placed on the robot.",
-                        "Wired robots can use external batteries.",
-                        "Battery terminals must be protected from short circuits to avoid fires. Failure to do so will result in disqualification."
-                    ],
-                    "robot_control": [
-                        "Wired bots must have a minimum wire length of 10 meters. Wires should remain slack at any instant during the fight.",
-                        "All wires should be stacked as a single unit.",
-                        "Wires should project 1000 mm above the ground to avoid entanglement.",
-                        "Wireless systems should have a minimum of four frequency remote control circuits or two dual control circuits to avoid frequency interference with the opposing team.",
-                        "Interference in wireless systems will not be considered for rematches or results.",
-                        "Readymade remote controls are allowed."
-                    ],
-                    "pneumatics_and_hydraulics": [
-                        "Pneumatic and hydraulic weapon systems can be used, but external pressure/liquid cylinders are not allowed. Cylinders must be placed on the robots.",
-                        "The outlet pressure of the source/tank should not exceed 8 bars.",
-                        "Pressurized, non-flammable gases/liquids can be used to initialize pneumatic mechanisms.",
-                        "A temporary pressure gauge or a provision to measure cylinder pressure on the robot should be available.",
-                        "Pneumatic components must be securely mounted, especially the pressure vessel to ensure safety."
-                    ],
-                    "weapon_systems": [
-                        "Robots can use any kind of cutters, flippers, saws, hammers, lifting devices, etc., except for:",
-                        "Liquid projectiles",
-                        "Acid-based weapons",
-                        "EMP generators",
-                        "Flammable liquids or flame-producing weapons",
-                        "Explosives, water",
-                        "Nets, glue, or any entanglement devices",
-                        "High power magnets or electromagnets"
-                    ],
-                    "general_rules": [
-                        "Teams can have a maximum of 4 participants.",
-                        "Bots in the form of clusters are allowed, but the total weight should not exceed the weight limit.",
-                        "Setup time is 60 seconds. Teams not reporting to the weight and measurement counter before setup time starts will forfeit the round.",
-                        "The bot will be inspected for safety before the event begins and may be discarded if found unsafe for participants or spectators.",
-                        "The bot cannot be split into two sub-units. Two distinct parts connected by a flexible cable will be considered separate units.",
-                        "Damaging the arena will lead to immediate disqualification.",
-                        "Lego kits, readymade kits, car bases, and development boards are not permitted. Readymade gearboxes are allowed.",
-                        "Teams that are not ready when called for battle will be considered to have declared a walkover and will receive no points.",
-                        "The organizers have the right to change any or all of the rules. Changes will be highlighted on the website or Social media pages.",
-                        "Violation of any rules will result in immediate disqualification.",
-                        "The judges' decision will be final and binding."
+                "regionals": {
+                    "overview": "Preliminary round where teams submit a project summary.",
+                    "entry_rules": [
+                        "No registration fees will be charged.",
+                        "Teams must submit a one-page project summary adhering to submission guidelines.",
+                        "The project must be submitted within the given time period on the specified platform.",
+                        "The summary must include problem-solving steps and the solution's benefits to the community.",
+                        "Graphics may be included if necessary, but they must be of reasonable, readable size and reflect original work.",
+                        "The front page should include team name, members' names, college name, phone number, email address, and registered ID on the Infotsav website.",
+                        "The judges' decision is final and binding."
+                    ]
+                },
+                "onsite": {
+                    "overview": "Final 36-hour round held at ABV-IIITM for selected teams.",
+                    "entry_rules": [
+                        "A nominal fee will be charged per team for the Onsite round.",
+                        "A maximum of seven teams will be selected from every region for the finals.",
+                        "Participants must bring their own laptops, phones, and tablets.",
+                        "Internet and infrastructure support will be provided, but the organizers will not be liable for any network failures.",
+                        "Any kind of plagiarism will result in immediate disqualification.",
+                        "By participating, participants agree that the Hackathlon organizers will not be liable for any disputes or damages related to the hackathon, its attendees, intellectual property, or related projects."
                     ]
                 }
             }
         }
     },
     {
-        "id": 8,
-        "name": "Mini Robo War",
-        "category": "Robotics",
-        "about": "An intense and thrilling battle where robots fight each other in an arena, aiming to overpower opponents within a fixed time duration.",
+        "id": 3,
+        "name": "Code Rush",
+        "category": "Technical",
+        "about": "Battle it out in a high-octane competitive programming contest! Tackle algorithmic puzzles under pressure in this ultimate test of speed, logic, and precision. Only the quickest codes will rise to the top.",
         "fee": 0,
-        "date": "2024-10-20",
-        "img": "https://res.cloudinary.com/dih6gwkau/image/upload/v1724434487/robowars_gwtcel.jpg",
-        "url": "",
-        "prize": "40k",
+        "date": "2025-10-11",
+        "img": "https://res.cloudinary.com/dih6gwkau/image/upload/v1728065831/code_rush__hqurgj.jpg",
+        "url": "https://unstop.com/hackathons/coderush-competitive-program-challenge-infotsav25-atal-bihari-vajpayee-indian-institute-of-information-techno-1543376",
+        "prize": "125k",
         "contact": [
             {
-                "name": "Uajjaw",
-                "phone": "8769445541",
-                "email": "events@infotsav.in"
+                "name": "Harshit Vishnoi",
+                "phone": "7417694977",
+                "email": "harshitvishnoi8@gmail.com"
             },
             {
-                "name": "Snehal Prakash Chaudhari",
-                "phone": "9172828839",
-                "email": "events@infotsav.in"
+                "name": "Rachit Agarwal",
+                "phone": "7020058810",
+                "email": "rachitag11@gmail.com"
+            },
+            {
+                "name": "Mradul Tiwari",
+                "phone": "8881132265",
+                "email": "mradultiwari1708@gmail.com"
             }
-        ],
-        "description": {
-            "overview": "The Mini Robo War is an intense and thrilling battle where robots fight each other in an arena. The goal is to overpower opponents by pushing them out of the arena or dropping them into a pit within a fixed time duration.",
-            "rules": {
-                "miniwars": {
-                    "bot_dimensions_and_fabrication": [
-                        "The initial dimension of the robot should not exceed 35cm x 35cm x 30cm. Once the match starts, there is no limitation on robot dimensions.",
-                        "No machine component should intentionally detach during the battle.",
-                        "The robot's weight should not exceed 30 kg and should not be less than 5 kg (excluding remote control and remote control wires).",
-                        "In the case of a wireless robot, the weight will be counted as 0.8 times the actual weight.",
-                        "Readymade gearboxes, parts, chassis, control circuits, and remote controls can be used."
-                    ],
-                    "battery_and_power": [
-                        "The machine must be powered electrically only; the use of IC engines in any form is not allowed.",
-                        "Batteries must be sealed, immobilized-electrolyte types (such as gel cells, lithium, NiCad, NiMH, or dry cells).",
-                        "The electrical voltage at any point in the machine should not exceed 24 V DC/AC.",
-                        "230V AC power will be provided for wired bots.",
-                        "In the case of wireless robots, batteries should be placed on the robot.",
-                        "Wired robots can use external batteries.",
-                        "Battery terminals must be protected from short circuits to avoid fires. Failure to do so will result in disqualification."
-                    ],
-                    "robot_control": [
-                        "Wired bots must have a minimum wire length of 10 meters. Wires should remain slack at any instant during the fight.",
-                        "All wires should be stacked as a single unit.",
-                        "Wires should project 1000 mm above the ground to avoid entanglement.",
-                        "Wireless systems should have a minimum of four frequency remote control circuits or two dual control circuits to avoid frequency interference with the opposing team.",
-                        "Interference in wireless systems will not be considered for rematches or results.",
-                        "Readymade remote controls are allowed."
-                    ],
-                    "pneumatics_and_hydraulics": [
-                        "Pneumatic and hydraulic weapon systems can be used, but external pressure/liquid cylinders are not allowed. Cylinders must be placed on the robots.",
-                        "The outlet pressure of the source/tank should not exceed 8 bars.",
-                        "Pressurized, non-flammable gases/liquids can be used to initialize pneumatic mechanisms.",
-                        "A temporary pressure gauge or a provision to measure cylinder pressure on the robot should be available.",
-                        "Pneumatic components must be securely mounted, especially the pressure vessel to ensure safety."
-                    ],
-                    "weapon_systems": [
-                        "Robots can use any kind of cutters, flippers, saws, hammers, lifting devices, etc., except for:",
-                        "Liquid projectiles",
-                        "Acid-based weapons",
-                        "EMP generators",
-                        "Flammable liquids or flame-producing weapons",
-                        "Explosives, water",
-                        "Nets, glue, or any entanglement devices",
-                        "High power magnets or electromagnets"
-                    ],
-                    "general_rules": [
-                        "Teams can have a maximum of 4 participants.",
-                        "Bots in the form of clusters are allowed, but the total weight should not exceed the weight limit.",
-                        "Setup time is 60 seconds. Teams not reporting to the weight and measurement counter before setup time starts will forfeit the round.",
-                        "The bot will be inspected for safety before the event begins and may be discarded if found unsafe for participants or spectators.",
-                        "The bot cannot be split into two sub-units. Two distinct parts connected by a flexible cable will be considered separate units.",
-                        "Damaging the arena will lead to immediate disqualification.",
-                        "Lego kits, readymade kits, car bases, and development boards are not permitted. Readymade gearboxes are allowed.",
-                        "Teams that are not ready when called for battle will be considered to have declared a walkover and will receive no points.",
-                        "The organizers have the right to change any or all of the rules. Changes will be highlighted on the website or Social media pages.",
-                        "Violation of any rules will result in immediate disqualification.",
-                        "The judges' decision will be final and binding."
-                    ]
-                }
-            }
-        }
+        ]
     },
     {
         "id": 9,
-        "name": "Drone Shot",
-        "category": "Robotics",
-        "about": "A challenging event where participants create and pilot self-made drones through a complex, obstacle-filled course testing agility, control, and durability.",
+        "name": "HardWired",
+        "category": "Technical",
+        "about": "A hands-on, hardware-focused innovation challenge where teams design, wire, program, and build working prototypes to solve real-workd problems. With themes like IoT, agriculture, and defense, it's all about turning bold ideas into functional, tangible tech.",
         "fee": 0,
-        "date": "2024-10-21",
+        "date": "2025-10-11",
         "img": "https://res.cloudinary.com/dih6gwkau/image/upload/v1724880079/droneshot_aeqnwb.png",
-        "url": "https://unstop.com/competitions/droneshot-infotsav24-atal-bihari-vajpayee-indian-institute-of-information-technology-and-management-abv-iii-1146005",
-        "prize": "25k",
+        "url": "",
+        "prize": "100k",
         "contact": [
             {
-                "name": "Uajjawal Sharma",
-                "phone": "8769445541",
-                "email": "events@infotsav.in"
+                "name": "Bhudev Bhanpuriya",
+                "phone": "8823085185",
+                "email": ""
+            },
+            {
+                "name": "Prince Agrawal",
+                "phone": "8265819270",
+                "email": "princeagrawal1013@gmail.com"
+            },
+            {
+                "name": "Manshu Jaiswal",
+                "phone": "",
+                "email": "manshujaiswal555@gmail.com"
             }
         ],
         "description": {
-            "overview": "Drone Shot challenges participants to create and pilot a powerful, self-made drone capable of navigating through a complex, obstacle-filled course. The course will test the drone's agility, control, and durability with various obstacles, including rings, tubes, sharp maneuvers, rapid vertical movements, moving obstacles, fans, and more. Specific course details will be revealed on the competition day.",
-            "rules": {
-                "drone_specifications": [
-                    "The drone's size should not exceed 70 x 70 x 70 cm.",
-                    "The drone must be self-made; the use of Ready-to-Fly (RTF) and Almost-Ready-to-Fly (ARTF) kits is prohibited.",
-                    "The drone should be powered or propelled by a non-hydrocarbon engine."
-                ],
-                "drone_controlling": [
-                    "The drone must be controlled by a wireless remote control.",
-                    "The drone must have two remote controllers of different frequencies or an alternate frequency remote control circuit that can switch between frequencies before the competition begins to avoid frequency interference with competing drones.",
-                    "Only one team member is allowed to operate the drone throughout the event. This operator must have basic flying skills, including takeoff and landing.",
-                    "Flying the drone outside the designated area (into the no-flying zone) is prohibited.",
-                    "The operator is solely responsible for the safe flight of the drone. Any damage due to crashes or malfunction is the operator's responsibility."
-                ],
-                "general_rules": [
-                    "Teams can have a maximum of 4 participants.",
-                    "Participants must demonstrate basic flying skills before the competition starts.",
-                    "Each obstacle in the course will have points assigned based on its complexity. The final score will consider both the points accumulated and the time taken.",
-                    "An additional bonus round may be conducted, with details provided on the competition day."
-                ],
-                "bonus_round": [
-                    "Participants must mount a camera on the drone and record a video of the entire arena for at least 1 minute.",
-                    "The video should be automatically saved on the drone's onboard memory and should be viewable on any computer after retrieving the drone.",
-                    "Scoring for the bonus round will be based on video stabilization, resolution, recorded time, etc."
-                ]
-            }
+            "overview": "A hands-on, hardware-focused innovation challenge where teams design, wire, program, and build working prototypes to solve real-workd problems. With themes like IoT, agriculture, and defense, it's all about turning bold ideas into functional, tangible tech."
         }
     },
     {
         "id": 10,
-        "name": "Blazing Wheel",
-        "category": "Robotics",
-        "about": "Join the Blazing Wheels event and race your robots through a thrilling course designed to test speed and agility. Teams will compete in a high-speed race, navigating through challenging tracks with precision and control. This event promises a battle of technology and skill, where only the best robots will prevail.",
+        "name": "Ideathon",
+        "category": "Technical",
+        "about": "A challenge for the visionaries! Solve pressing problems using frontier tech - AI, ML, blockchain or Data Science. It's not just about ideas, it's about solutions that work, impress, and inspire. Present your innovation and make your pitch count.",
         "fee": 0,
-        "date": "2024-10-22",
+        "date": "2025-10-12",
         "img": "https://res.cloudinary.com/dih6gwkau/image/upload/v1724434512/blazing_wheel_stuwv6.jpg",
-        "url": "https://unstop.com/competitions/blazing-wheels-infotsav24-atal-bihari-vajpayee-indian-institute-of-information-technology-and-management-ab-1142236",
-        "prize": "15k",
+        "url": "https://unstop.com/competitions/ideathon-infotsav25-atal-bihari-vajpayee-indian-institute-of-information-technology-and-management-1543649",
+        "prize": "50k",
         "contact": [
             {
-                "name": "Uajjawal Sharma",
-                "phone": "8769445541",
-                "email": "events@infotsav.in"
+                "name": "Mradul Tiwari",
+                "phone": "8881132265",
+                "email": "mradultiwari1708@gmail.com"
             },
             {
-                "name": "Anisha Khairnar",
-                "phone": "7387797094",
-                "email": "events@infotsav.in"
+                "name": "Simran Raitani",
+                "phone": "7905820879",
+                "email": "simranraitani53@gmail.com"
             },
             {
-                "name": "Rohit Kumawat",
-                "phone": "9130660628",
-                "email": "events@infotsav.in"
+                "name": "Varada Dhapre",
+                "phone": "9326927148",
+                "email": "varadadhapre@gmail.com"
             }
         ],
         "description": {
-            "overview": "Participate in Blazing Wheels and showcase your robot’s racing capabilities. This event features a challenging course where teams must demonstrate their robots' speed and maneuverability.",
-            "eligibility": [
-                "Open to teams from any recognized engineering college or institute.",
-                "Teams can consist of students from different colleges.",
-                "All participants must present valid ID cards.",
-                "There is no limit on the number of teams per college."
-            ],
-            "team_specifications": [
-                "Teams may consist of 1 to 4 members.",
-                "Each team must have a designated operator.",
-                "Only one robot per team is allowed."
-            ],
-            "robot_specifications": [
-                "Maximum dimensions: 50cm x 50cm x 50cm.",
-                "Weight limit: 20kg.",
-                "Robots must be powered by electric motors.",
-                "Safety checks will be conducted before the race."
-            ],
-            "safety_rules": [
-                "All robots must pass a safety inspection before the race.",
-                "Only one team member is allowed to handle the robot.",
-                "Participants must wear safety gear, including goggles.",
-                "The event organizers are not responsible for any damage to robots."
-            ],
-            "race_rules": [
-                "Teams must register online on the official Infotsav website.",
-                "A Team ID will be allocated for reference.",
-                "Judges' decisions are final.",
-                "The latest information and updates will be available on the website and communicated via email.",
-                "Robots causing damage to the arena will be disqualified.",
-                "Robots must display linear motion of at least one inch in 30 seconds.",
-                "Final selection will be based on net time after penalties."
-            ],
-            "event_structure": {
-                "mode": "Offline",
-                "race_format": "To be declared",
-                "qualifiers": "2-3 rounds with multiple heats, each heat lasting 3-4 minutes.",
-                "final_round": "Top robots based on qualifying times will compete.",
-                "obstacle_contact": "Touching obstacles is allowed as long as the robot remains operational."
-            }
-        }
-    },
-    {
-        "id": 12,
-        "name": "RoboMaze",
-        "category": "Robotics",
-        "about": "The challenge, involves building a remote-controlled Micromouse that can find its way to the center of a maze, aiming to complete the task in the least amount of time.",
-        "fee": 0,
-        "date": "2024-10-21",
-        "img": "https://res.cloudinary.com/dih6gwkau/image/upload/v1725829788/robomaze_lnging.jpg",
-        "url": "https://unstop.com/o/fIyl5zD?lb=DEFYY6di",
-        "prize": "25k",
-        "contact": [
-            {
-                "name": "Uajjawal Sharma",
-                "phone": "8769445541",
-                "email": "events@infotsav.in"
-            }
-        ],
-        "description": {
-            "overview": "The challenge, involves building a Micromouse that can find its way to the center of a maze, aiming to complete the task in the least amount of time."
+            "overview": "A challenge for the visionaries! Solve pressing problems using frontier tech - AI, ML, blockchain or Data Science. It's not just about ideas, it's about solutions that work, impress, and inspire. Present your innovation and make your pitch count."
         }
     }
 ]
