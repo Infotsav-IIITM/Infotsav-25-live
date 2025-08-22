@@ -12,62 +12,62 @@ interface Area {
 }
 
 const areas: Area[] = [
-    {
-        name: 'Area 1',
-        href: '/events',
-        coords: [
-            [117, 176],
-            [277, 178],
-            [315, 153],
-            [279, 127],
-            [120, 132],
-        ],
-        style: {
-            transition: 'fill 0.2s, stroke 0.2s',
-        },
+  {
+    name: "Area 1",
+    href: "/events",
+    coords: [
+      [117, 176],
+      [277, 178],
+      [315, 153],
+      [279, 127],
+      [120, 132],
+    ],
+    style: {
+      transition: "fill 0.2s, stroke 0.2s",
     },
-    {
-        name: 'Area 2',
-        href: '/sponsors',
-        coords: [
-            [71, 217],
-            [109, 190],
-            [268, 204],
-            [272, 249],
-            [110, 245],
-        ],
-        style: {
-            transition: 'fill 0.2s, stroke 0.2s',
-        },
+  },
+  {
+    name: "Area 2",
+    href: "/sponsors",
+    coords: [
+      [71, 217],
+      [109, 190],
+      [268, 204],
+      [272, 249],
+      [110, 245],
+    ],
+    style: {
+      transition: "fill 0.2s, stroke 0.2s",
     },
-    {
-        name: 'Area 3',
-        href: '/ambassador',
-        coords: [
-            [276, 263],
-            [311, 285],
-            [278, 313],
-            [103, 318],
-            [100, 270],
-        ],
-        style: {
-            transition: 'fill 0.2s, stroke 0.2s',
-        },
+  },
+  {
+    name: "Area 3",
+    href: "/ambassador",
+    coords: [
+      [276, 263],
+      [311, 285],
+      [278, 313],
+      [103, 318],
+      [100, 270],
+    ],
+    style: {
+      transition: "fill 0.2s, stroke 0.2s",
     },
-    {
-        name: 'Area 4',
-        href: '#about-us',
-        coords: [
-            [84, 358],
-            [114, 333],
-            [272, 334],
-            [272, 378],
-            [112, 383],
-        ],
-        style: {
-            transition: 'fill 0.2s, stroke 0.2s',
-        },
+  },
+  {
+    name: "Area 4",
+    href: "#about-us",
+    coords: [
+      [84, 358],
+      [114, 333],
+      [272, 334],
+      [272, 378],
+      [112, 383],
+    ],
+    style: {
+      transition: "fill 0.2s, stroke 0.2s",
     },
+  }
 ];
 
 const registerArea: Area[] = [
@@ -91,6 +91,8 @@ const registerArea: Area[] = [
 const Hero = () => {
     const [scrollY, setScrollY] = useState(0);
     const navigate = useNavigate();
+    const infotsavURL =
+      "https://unstop.com/college-fests/infotsav25-atal-bihari-vajpayee-indian-institute-of-information-technology-and-management-384862";
 
     useEffect(() => {
         const handleScroll = () => {
@@ -114,6 +116,10 @@ const Hero = () => {
         if (isMobile) {
             toggleMobileMenu();
         }
+    };
+
+    const handleRegisterClick = () => {
+        window.open(infotsavURL, '_blank');
     };
 
     const handleSponsorsClick = () => {
@@ -234,6 +240,9 @@ const Hero = () => {
                             } else if (area.href === '/ambassador') {
                                 handleAmbassadorClick();
                             }
+                            else if (area.href === '/register') {
+                                handleRegisterClick();
+                            }
                         }}
                     />
                 </div>
@@ -243,6 +252,7 @@ const Hero = () => {
                         alt="Interactive Map"
                         className="w-full h-auto max-sm:hidden"
                         areas={registerArea}
+                        onAreaClick={handleRegisterClick}
                     />
                 </div>
             </div>

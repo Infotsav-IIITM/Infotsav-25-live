@@ -9,6 +9,7 @@ interface FlagshipEvent {
   img?: string;
   prize?: string;
   date?: string;
+  url?: string;
   fee?: number;
   contact?: Array<{
     name: string;
@@ -31,6 +32,15 @@ export const FlagshipEventCard = ({
   isActive,
 }: FlagshipEventCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
+
+  const handleClick = () => {
+    if(event.url) {
+        window.open(event.url, "_blank");
+    }
+    else {
+        alert("Details Coming Soon!!");
+    }
+  };
 
   return (
     <motion.div
@@ -106,7 +116,9 @@ export const FlagshipEventCard = ({
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="w-fit bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-5 text-base rounded-xl transition-colors duration-200 shadow-lg font-poppins">
+              className="w-fit bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-5 text-base rounded-xl transition-colors duration-200 shadow-lg font-poppins"
+              onClick={handleClick}
+              >
               View Details
             </motion.button>
           </div>
