@@ -86,6 +86,7 @@ const EventsPage = () => {
               title: event.name,
               description: event.about,
               url: event.url,
+              img: event.img,
             }))}
             currentIndex={domainIndices[idx]}
             setCurrentIndex={(cardIdx: number) => setDomainIndex(idx, cardIdx)}
