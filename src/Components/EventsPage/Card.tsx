@@ -18,7 +18,7 @@ const Card: React.FC<CardProps> = ({
   return (
     <div
       id={id}
-      className="group relative bg-gray-800 shadow-2xl rounded-2xl overflow-hidden h-full w-full transition-all duration-300 ease-in-out border-2 border-gray-300/40"
+      className="group relative bg-gray-800 shadow-2xl rounded-2xl overflow-hidden h-full w-full transition-all duration-300 ease-in-out border-gray-300/40"
     >
       {/* Background / Image area from JSON */}
       <div
@@ -46,7 +46,7 @@ const Card: React.FC<CardProps> = ({
       <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       <div className="absolute inset-x-0 bottom-0 p-4 sm:p-6">
         <div className="w-[92%] sm:w-[85%] space-y-3 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out">
-          <h3 className="text-2xl sm:text-3xl font-bold text-teal-300 font-cattedrale drop-shadow">
+          <h3 className="text-2xl sm:text-3xl font-bold text-[#f83e3e] font-cattedrale drop-shadow">
             {title}
           </h3>
           <style>{`
@@ -62,7 +62,7 @@ const Card: React.FC<CardProps> = ({
             {description}
           </div>
           <button
-            className="mt-2 sm:mt-3 px-4 py-2 bg-teal-500 hover:bg-teal-600 text-white rounded-lg font-semibold transition-colors duration-300 shadow"
+            className="mt-2 sm:mt-3 px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-lg font-semibold transition-colors duration-300 shadow"
             onClick={onRegister}
           >
             Register
