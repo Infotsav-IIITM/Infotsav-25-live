@@ -4,6 +4,7 @@ interface CardProps {
   title: string;
   description: string;
   id?: string;
+  img?: string;
   onRegister?: () => void;
 }
 
