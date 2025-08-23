@@ -297,7 +297,7 @@ const Domain: React.FC<DomainProps> = ({
             onTouchStart={stopAutoScroll}
             onTouchEnd={startAutoScroll}
           >
-            {virtualCards.map((card, vIdx) => (
+            {virtualCards.map((_, vIdx) => (
               <div
                 key={vIdx}
                 ref={(el) => {
