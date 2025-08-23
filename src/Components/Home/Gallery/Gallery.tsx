@@ -71,7 +71,7 @@ const Gallery = () => {
     ];
     return (
         <div
-            className="w-full h-[900px] relative bg-stone-950 overflow-hidden max-md:h-dvh"
+            className="w-full h-[900px] relative bg-gradient-to-t to-stone-950 overflow-hidden max-md:h-dvh"
             style={{
                 scrollbarWidth: 'none', // Firefox
                 msOverflowStyle: 'none', // IE 10+
@@ -86,7 +86,7 @@ const Gallery = () => {
 
             {/* Scrollable Content */}
             <div
-                className="overflow-y-scroll px-6 pb-6 pt-4"
+                className="overflow-y-scroll px-6 pb-6 pt-4 "
                 style={{
                     height: 'calc(100% - 140px)', // Subtract header height
                     scrollbarWidth: 'none', // Firefox

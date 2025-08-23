@@ -1,0 +1,107 @@
+[
+    {
+        "id": 15,
+        "name": "Theatrix",
+        "category": "Cultural",
+        "about": "Lights, drama, expression - welcome to Theatrix, where characters come alive and scripts breathe emotion. Take the stage and transform into stories that stir, shake, and shine. This is more than theatre. This is transformation.",
+        "fee": 0,
+        "date": "2025-10-12",
+        "img": "https://res.cloudinary.com/dih6gwkau/image/upload/v1755968154/Theatrix_rquthb.png",
+        "url": "https://unstop.com/events/theatrix-drama-competitionsolonukkad-infotsav25-atal-bihari-vajpayee-indian-institute-of-information-technology-a-1543141",
+        "prize": "100K",
+        "contact": [
+            {
+                "name": "Samyak Choudhary",
+                "phone": "9993148060",
+                "email": "infotsav@iiitm.ac.in"
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Corna - Battle of Bands",
+        "category": "Cultural",
+        "about": "Unleash your rhythm and rock the stage at Corna, the ultimate battle of bands! Whether you're a headbanger, a bassist, or a vocalist, this is your arena to electrify the crowd. Get ready to face the heat, chase the beast, and own the night with music that speaks louder than words.",
+        "fee": 0,
+        "date": "2025-10-12",
+        "img": "",
+        "url": "https://unstop.com/events/corna-battle-of-bands-infotsav25-atal-bihari-vajpayee-indian-institute-of-information-technology-and-management-1542918",
+        "prize": "125k",
+        "contact": [
+            {
+                "name": "Samyak Choudhary",
+                "phone": "9993148060",
+                "email": "infotsav@iiitm.ac.in"
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "name": "Parivesh - Fashion Show",
+        "category": "Cultural",
+        "about": "Elegance meets expression on the runway of Parivesh, where style isn't just worn - it's performed. Flaunt your fashion, radiate confidence, and be the face that turns heads.",
+        "fee": 0,
+        "date": "2025-10-12",
+        "img": "",
+        "url": "https://unstop.com/events/parivesh-the-fashion-show-infotsav25-atal-bihari-vajpayee-indian-institute-of-information-technology-and-manageme-1544578",
+        "prize": "100k",
+        "contact": [
+            {
+                "name": "Samyak Choudhary",
+                "phone": "9993148060",
+                "email": "infotsav@iiitm.ac.in"
+            },
+            {
+                "name": "Rohit Kumawat",
+                "phone": "9130660628",
+                "email": "infotsav@iiitm.ac.in"
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "name": "Step Up",
+        "category": "Cultural",
+        "about": "Dance is more than motion - it's a step-up into expression. Whether bold or fluid, classical or cutting-edge - every movement holds meaning. The stage is set - step up and let your passion speak through every beat.",
+        "fee": 0,
+        "date": "2025-10-12",
+        "img": "",
+        "url": "https://unstop.com/events/step-up-dance-competition-sologroup-infotsav25-atal-bihari-vajpayee-indian-institute-of-information-technology-an-1543975",
+        "prize": "100k",
+        "contact": [
+            {
+                "name": "Guddala Yashwanth Sai",
+                "phone": "7997882456",
+                "email": "infotsav@iiitm.ac.in"
+            },
+            {
+                "name": "Samyak Choudhary",
+                "phone": "9993148060",
+                "email": "infotsav@iiitm.ac.in"
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "name": "Aaroh - Solo Singing Competition",
+        "category": "Cultural",
+        "about": "From soulful raagas to powerful high notes, Aaroh is where melodies take flight. Step up to the mic, feel the spotlight, and let your voice echo with emotion and passion. If music is your language, this stage is your canvas.",
+        "fee": 0,
+        "date": "2025-10-12",
+        "img": "",
+        "url": "https://unstop.com/events/aaroh-solo-singing-competition-infotsav25-atal-bihari-vajpayee-indian-institute-of-information-technology-and-man-1543128",
+        "prize": "40k",
+        "contact": [
+            {
+                "name": "Malladi Nagarjuna",
+                "phone": "9346770730",
+                "email": "infotsav@iiitm.ac.in"
+            },
+            {
+                "name": "Samyak Choudhary",
+                "phone": "9993148060",
+                "email": "infotsav@iiitm.ac.in"
+            }
+        ]
+    }
+]

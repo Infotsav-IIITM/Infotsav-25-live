@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage: Highest priority, checked weekly for updates. -->
+  <url>
+    <loc>https://infotsav.com/</loc>
+    <lastmod>2025-08-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Events Page: High priority, as event details may change. -->
+  <url>
+    <loc>https://infotsav.com/events</loc>
+    <lastmod>2025-08-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Registration Page: High priority, crucial for user action. -->
+  <url>
+    <loc>https://infotsav.com/register</loc>
+    <lastmod>2025-08-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Sponsors Page: Medium priority, updated less frequently. -->
+  <url>
+    <loc>https://infotsav.com/sponsors</loc>
+    <lastmod>2025-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Ambassador Page: High priority leading up to the event. -->
+  <url>
+    <loc>https://infotsav.com/ambassador</loc>
+    <lastmod>2025-08-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact Page: Lower priority, content is static. -->
+  <url>
+    <loc>https://infotsav.com/contact</loc>
+    <lastmod>2025-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

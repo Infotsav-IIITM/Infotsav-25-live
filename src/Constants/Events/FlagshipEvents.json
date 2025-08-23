@@ -5,23 +5,30 @@
         "category": "Technical",
         "about": "A flagship hackathon challenging coders to solve real-life problems by developing innovative websites, apps, or desktop solutions.",
         "fee": 0,
-        "date": "2024-10-18",
-        "prize": "60k",
+        "date": "2025-10-10",
+        "prize": "250k",
         "img": "https://res.cloudinary.com/dih6gwkau/image/upload/v1724882920/Hackathon_banner_zyetj3.webp",
+        "url":"https://unstop.com/hackathons/hackatron-infotsav25-atal-bihari-vajpayee-indian-institute-of-information-technology-and-management-1543329",
         "contact": [
             {
-                "name": "John Doe",
-                "phone": "9876543210",
-                "email": "events@infotsav.in"
+                "name": "Mradul Tiwari",
+                "phone": "8881132265",
+                "email": "mradultiwari1708@gmail.com"
             },
             {
-                "name": "Jane Doe",
-                "phone": "9876543210",
-                "email": "events@infotsav.in"
+                "name": "Avan Sahu",
+                "phone": "9893102491",
+                "email": "avan.sahu0987@gmail.com"
+            },
+            {
+                "name": "Ansh Saxena",
+                "phone":"9913188186",
+                "email": "anshwww@gmail.com"
+
             }
         ],
         "description": {
-            "overview": "Hackathlon is one of our flagship hackathon events, attracting widespread enthusiasm and huge participation in previous years. This hackathon provides a platform for coders, software programmers, and developers to build and design something unconventional. Participants will be tasked with solving nerve-wracking problem statements and developing a website, Android app, or desktop app within a limited time period, based on real-life problems.",
+            "overview": "Hackatron is one of our flagship hackathon events, attracting widespread enthusiasm and huge participation in previous years. This hackathon provides a platform for coders, software programmers, and developers to build and design something unconventional. Participants will be tasked with solving nerve-wracking problem statements and developing a website, Android app, or desktop app within a limited time period, based on real-life problems.",
             "rules": {
                 "regionals": {
                     "overview": "Preliminary round where teams submit a project summary.",
@@ -51,27 +58,19 @@
     },
     {
         "id": 7,
-        "name": "RoboWars",
+        "name": "Robo Wars",
         "category": "Robotics",
-        "about": "A battle where powerful robots face off in an arena, aiming to overpower their opponent within a fixed time duration.",
+        "about": "Enter the combat zone with your custom - engineered warrior! Watch sparks fly as bots clash in an electrifying arena where only the toughest survive. Power, precision, and pure destruction - welcome to the ultimate robotic showdown.",
         "fee": 0,
-        "date": "2024-10-20",
-        "prize": "65k",
-        "img": "https://res.cloudinary.com/dih6gwkau/image/upload/v1724883946/robowars_banner_with_bgc_s8epe2.png",
+        "date": "2025-10-11",
+        "img": "https://res.cloudinary.com/dih6gwkau/image/upload/v1724434487/robowars_gwtcel.jpg",
+        "url": "",
+        "prize": "200k",
         "contact": [
-            {
-                "name": "John Smith",
-                "phone": "9876543212",
-                "email": "events@infotsav.in"
-            },
-            {
-                "name": "Alice Johnson",
-                "phone": "9876543213",
-                "email": "events@infotsav.in"
-            }
+           
         ],
         "description": {
-            "overview": "The Mega Robo War is the ultimate battle where two powerful robots face off in a high-stakes arena fight. The goal is to overpower the opponent by pushing them out of the arena or dropping them into a pit within a fixed time duration.",
+            "overview": "The Robo War is the ultimate battle where two powerful robots face off in a high-stakes arena fight. The goal is to overpower the opponent by pushing them out of the arena or dropping them into a pit within a fixed time duration.",
             "rules": {
                 "megawars": {
                     "bot_dimensions_and_fabrication": [
@@ -136,31 +135,45 @@
         "id": 3,
         "name": "Code Rush",
         "category": "Technical",
-        "about": "A high-intensity coding contest testing participants logic, math, and algorithmic skills through complex problem statements.",
+        "about": "Battle it out in a high-octane competitive programming contest! Tackle algorithmic puzzles under pressure in this ultimate test of speed, logic, and precision. Only the quickest codes will rise to the top.",
         "fee": 0,
-        "date": "2024-10-18",
+        "date": "2025-10-11",
         "img": "https://res.cloudinary.com/dih6gwkau/image/upload/v1728065831/code_rush__hqurgj.jpg",
-        "url": "https://unstop.com/hackathons/techathalon-infotsav24-atal-bihari-vajpayee-indian-institute-of-information-technology-and-management-abv-iii-1152392",
-        "prize": "40k"
+        "url": "https://unstop.com/hackathons/coderush-competitive-program-challenge-infotsav25-atal-bihari-vajpayee-indian-institute-of-information-techno-1543376",
+        "prize": "125k",
+        "contact": [
+            {
+                "name": "Harshit Vishnoi",
+                "phone": "7417694977",
+                "email": "harshitvishnoi8@gmail.com"
+            },
+            {
+                "name": "Rachit Agarwal",
+                "phone": "7020058810",
+                "email": "rachitag11@gmail.com"
+            },
+            {
+                "name": "Mradul Tiwari",
+                "phone": "8881132265",
+                "email": "mradultiwari1708@gmail.com"
+            }
+        ]
     },
     {
         "id": 12,
         "name": "Pinnacle",
         "category": "Managerial",
-        "about": "If you have a unique idea that sets you on the path to becoming a successful entrepreneur, then Pinnacle is the event for you. As one of the most prestigious events of Infotsav, Pinnacle provides a platform for innovative ideas, offering the spark needed to ignite entrepreneurial success. This flagship event of Infotsav'19 attracts students from the best B-schools and engineering colleges across the country.",
+        "about": "A legacy since 2012, Pinnacle is not just a competition - it's a launchpad. Witness India's sharpest young entrepreneurs step into the spotlight, pitch groundbreaking ideas, and battle it out for funding, fame, and future.",
         "fee": {
             "phase_1": 0,
             "phase_2": "{fees}"
         },
-        "date": "2024-10-23",
-        "prize": "40k",
+        "date": "2025-10-11",
+        "prize": "150k",
         "img": "https://res.cloudinary.com/dih6gwkau/image/upload/v1724882916/pinnacle_banner_b4qn4s.webp",
+        "url": "",
         "contact": [
-            {
-                "name": "Event Coordinator",
-                "phone": "1234567890",
-                "email": "events@infotsav.in"
-            }
+
         ],
         "description": {
             "overview": "Pinnacle is a premier event where teams present their innovative business ideas to a panel of judges. The event is split into two phases: an online submission of an executive summary and an on-campus presentation of the final business plans.",

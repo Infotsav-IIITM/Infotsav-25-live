@@ -1,0 +1,8 @@
+# robots.txt for https://infotsav.com
+
+User-agent: *
+# Allow all crawlers access to the site
+Allow: /
+
+# Specify the location of the sitemap
+Sitemap: https://www.infotsav.com/sitemap.xml

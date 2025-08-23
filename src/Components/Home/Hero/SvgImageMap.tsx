@@ -14,9 +14,10 @@ interface Props {
     alt: string;
     areas: Area[];
     className?: string; // e.g. "w-full h-auto"
+    onAreaClick?: (area: Area) => void; // Add callback for area clicks
 }
 
-const SvgImageMap: React.FC<Props> = ({ src, alt, areas, className = '' }) => {
+const SvgImageMap: React.FC<Props> = ({ src, alt, areas, className = '', onAreaClick }) => {
     const imgRef = useRef<HTMLImageElement>(null);
     const [viewBox, setViewBox] = useState<string>('0 0 1 1');
     const navigate = useNavigate(); // 🧭 React Router DOM hook
@@ -85,6 +86,9 @@ const SvgImageMap: React.FC<Props> = ({ src, alt, areas, className = '' }) => {
                                         block: 'start',
                                     });
                                 }
+                            } else if (onAreaClick) {
+                                // Use callback if provided (for PageTransition)
+                                onAreaClick(area);
                             } else {
                                 // Navigate using React Router for external routes
                                 navigate(area.href);

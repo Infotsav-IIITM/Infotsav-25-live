@@ -299,3 +299,63 @@ body {
 .animate-slide-in-right {
     animation: slide-in-right 360ms ease-out both;
 }
+
+/* Floating animation for images */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Page transition animations */
+.page-transition-enter {
+    transform: translateX(100%);
+}
+
+.page-transition-enter-active {
+    transform: translateX(0%);
+    transition: transform 300ms ease-in-out;
+}
+
+.page-transition-exit {
+    transform: translateX(0%);
+}
+
+.page-transition-exit-active {
+    transform: translateX(-100%);
+    transition: transform 300ms ease-in-out;
+}
+
+/* Body transition effects */
+body.page-transitioning {
+    animation: slideToRight 0.3s ease-in-out;
+}
+
+body.page-transitioning-left {
+    animation: slideToLeft 0.3s ease-in-out;
+}
+
+@keyframes slideToRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes slideToLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

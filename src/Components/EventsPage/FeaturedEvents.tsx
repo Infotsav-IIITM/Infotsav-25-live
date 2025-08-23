@@ -1,7 +1,5 @@
-
 import React, { useState, useEffect, useRef } from "react";
 import flagshipEvents from "@/Constants/Events/FlagshipEvents.json";
-
 
 // Prepare slides from FlagshipEvents.json
 const slides = flagshipEvents.map((event: any) => ({
@@ -66,11 +64,13 @@ const FeaturedEvents: React.FC<FeaturedEventsProps> = ({ setDomainIndex }) => {
   }, [currentIndex, isTransitioning]);
 
   // Navigation: scroll to corresponding event card in domain carousel
-  const handleSlideClick = (slide: typeof slides[0]) => {
+  const handleSlideClick = (slide: (typeof slides)[0]) => {
     // Map category to domain index (must match domainJsons order in EventsPage)
     const domainMap = ["Managerial Events", "Robotics Events"];
     // Find domain index by matching full domain name
-    const domainIdx = domainMap.findIndex((d) => d.toLowerCase().includes(slide.domain.toLowerCase()));
+    const domainIdx = domainMap.findIndex((d) =>
+      d.toLowerCase().includes(slide.domain.toLowerCase())
+    );
     if (domainIdx !== -1) {
       // Get domain events from window (since FeaturedEvents doesn't have direct access)
       let domainEvents = [];
@@ -86,7 +86,9 @@ const FeaturedEvents: React.FC<FeaturedEventsProps> = ({ setDomainIndex }) => {
       }
       setDomainIndex(domainIdx, cardIdx);
       setTimeout(() => {
-        const cardId = `${domainMap[domainIdx].replace(/\s+/g, "-").toLowerCase()}-card-${cardIdx}`;
+        const cardId = `${domainMap[domainIdx]
+          .replace(/\s+/g, "-")
+          .toLowerCase()}-card-${cardIdx}`;
         const cardElement = document.getElementById(cardId);
         if (cardElement) {
           cardElement.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -97,29 +99,30 @@ const FeaturedEvents: React.FC<FeaturedEventsProps> = ({ setDomainIndex }) => {
 
   return (
     <div className="w-full flex flex-col justify-center items-center space-y-[3vw]">
-      <h2 className="w-full font-cattedrale text-[6vw] text-center">
-        Featured Events
+      <h2 className="w-full font-cattedrale text-[6vw] md:text-[5vw] lg:text-7xl text-center text-white drop-shadow-2xl tracking-wide">
+        FEATURED EVENTS
       </h2>
 
       <div
         className="relative w-[70vw] max-w-[900px] h-[36vw] min-h-[250px] max-h-[600px] overflow-hidden rounded-2xl mx-auto"
-        onMouseEnter={() => { stopAutoSlide(); }}
-        onMouseLeave={() => { startAutoSlide(); }}
-      >
+        onMouseEnter={() => {
+          stopAutoSlide();
+        }}
+        onMouseLeave={() => {
+          startAutoSlide();
+        }}>
         <div
           className={`flex h-full ${
             isTransitioning
               ? "transition-transform duration-700 ease-in-out"
               : ""
           }`}
-          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-        >
+          style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
           {carouselSlides.map((slide, index) => (
             <div
               key={index}
               className="relative w-full h-full flex-shrink-0 cursor-pointer group transition-transform duration-500 ease-in-out hover:z-20 hover:scale-105"
-              onClick={() => handleSlideClick(slide)}
-            >
+              onClick={() => handleSlideClick(slide)}>
               {/* Full background image */}
               <div
                 className="absolute inset-0 w-full h-full bg-cover bg-center z-0"
@@ -131,15 +134,21 @@ const FeaturedEvents: React.FC<FeaturedEventsProps> = ({ setDomainIndex }) => {
               <div className="absolute inset-0 z-20 h-full w-full flex flex-col justify-center items-start p-4 sm:p-10 gap-4 transition-opacity duration-300 opacity-100 sm:opacity-0 sm:group-hover:opacity-100">
                 {/* Mask for text background on mobile */}
                 <div className="absolute inset-0 z-[-1] bg-black/40 rounded-2xl sm:bg-transparent" />
-                <h3 className="text-white text-2xl sm:text-4xl font-bold font-cattedrale mb-2 drop-shadow-lg">{slide.name}</h3>
-                <div className="text-gray-200 text-base sm:text-lg mb-2 drop-shadow-md w-full overflow-y-auto h-[7em] sm:h-[12em] rounded-md bg-gray-900/60 flex items-start" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+                <h3 className="text-white text-2xl sm:text-4xl font-bold font-cattedrale mb-2 drop-shadow-lg tracking-wide">
+                  {slide.name}
+                </h3>
+                <div
+                  className="text-gray-200 text-base sm:text-lg mb-2 drop-shadow-md w-full overflow-y-auto h-[7em] sm:h-[12em] rounded-md bg-gray-900/60 flex items-start font-poppins"
+                  style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
                   <style>{`.hide-scrollbar::-webkit-scrollbar { display: none; }`}</style>
                   <div className="hide-scrollbar p-3">
                     {slide.about}
                     {slide.contact && (
                       <div className="mt-3 flex flex-col gap-1">
                         {slide.contact.map((c: any, i: number) => (
-                          <span key={i} className="text-sm text-teal-300 drop-shadow">
+                          <span
+                            key={i}
+                            className="text-sm text-teal-300 drop-shadow">
                             {c.name} | {c.phone} | {c.email}
                           </span>
                         ))}
@@ -153,12 +162,13 @@ const FeaturedEvents: React.FC<FeaturedEventsProps> = ({ setDomainIndex }) => {
         </div>
       </div>
       {/* Navigation Dots */}
-  <div className="flex justify-center items-center mt-1 space-x-3">
+      <div className="flex justify-center items-center mt-1 space-x-3">
         {slides.map((_, idx) => (
           <button
             key={idx}
             className={`w-3 h-3 rounded-full focus:outline-none transition-all duration-300 border-2 border-white ${
-              (currentIndex === idx || (currentIndex === slides.length && idx === 0))
+              currentIndex === idx ||
+              (currentIndex === slides.length && idx === 0)
                 ? "bg-white scale-110 shadow"
                 : "bg-gray-400 opacity-60"
             }`}

@@ -3,30 +3,17 @@
         "id": 12,
         "name": "Pinnacle",
         "category": "Managerial",
-        "about": "If you have a unique idea that sets you on the path to becoming a successful entrepreneur, then Pinnacle is the event for you. As one of the most prestigious events of Infotsav, Pinnacle provides a platform for innovative ideas, offering the spark needed to ignite entrepreneurial success. This flagship event of Infotsav'24 attracts students from the best B-schools and engineering colleges across the country.",
+        "about": "A legacy since 2012, Pinnacle is not just a competition - it's a launchpad. Witness India's sharpest young entrepreneurs step into the spotlight, pitch groundbreaking ideas, and battle it out for funding, fame, and future.",
         "fee": {
             "phase_1": 0,
             "phase_2": "{fees}"
         },
-        "date": "2024-10-23",
-        "img": "https://res.cloudinary.com/dih6gwkau/image/upload/v1724434496/pinnacle_rwrm5f.jpg",
-        "url": "https://unstop.com/competitions/pinnacle-atal-bihari-vajpayee-indian-institute-of-information-technology-and-management-1140571",
-        "prize": "30k",
+        "date": "2025-10-11",
+        "prize": "150k",
+        "img": "https://res.cloudinary.com/dih6gwkau/image/upload/v1724882916/pinnacle_banner_b4qn4s.webp",
+        "url": "",
         "contact": [
             {
-                "name": "Uajjawal Sharma",
-                "phone": "8769445541",
-                "email": "infotsav@iiitm.ac.in"
-            },
-            {
-                "name": "Sambodhi Roy",
-                "phone": "7439811569",
-                "email": "infotsav@iiitm.ac.in"
-            },
-            {
-                "name": "Bhudev Bhanpuriya",
-                "phone": "8823085185",
-                "email": "infotsav@iiitm.ac.in"
             }
         ],
         "description": {
@@ -38,7 +25,7 @@
                 "There is no limit on the number of teams per college."
             ],
             "team_specifications": [
-                "Teams may consist of 1 to 3 members.",
+                "Teams may consist of 1 to 4 members.",
                 "Cross-institute/organization teams are allowed.",
                 "Each team must have a designated presenter."
             ],
@@ -64,23 +51,20 @@
     },
     {
         "id": 13,
-        "name": "Sameeksha",
+        "name": "CaseCon",
         "category": "Managerial",
-        "about": "The Annual Paper Presentation Conference, Sameeksha, is designed to encourage students to prepare and present meaningful papers and presentations on a wide range of topics, both technical and non-technical. This event offers students valuable early experience in researching, writing, and presenting ideas related to their areas of interest and expertise.",
+        "about": "Analyze real-world problems, crack through scenarios, and pitch strategies like a true boardroom boss. Whether you're a consultant in the making or a strategist at heart - your time to lead is now.",
         "fee": 0,
         "date": "2024-10-25",
         "img": "https://res.cloudinary.com/dih6gwkau/image/upload/v1725214532/sameeksha_tgzxgp.jpg",
-        "url": "https://unstop.com/competitions/sameeksha-infotsav24-atal-bihari-vajpayee-indian-institute-of-information-technology-and-management-abv-iii-1146126",
-        "prize": "15k",
+        "url": "",
+        "prize": "100k",
         "contact": [
             {
-                "name": "Uajjawal Sharma",
-                "phone": "8769445541",
-                "email": "infotsav@iiitm.ac.in"
             }
         ],
         "description": {
-            "overview": "Sameeksha is a platform for students to present their research papers on a range of topics. Participants gain experience in academic research and presentation.",
+            "overview": "CaseCon is a platform for students to present their research papers on a range of topics. Participants gain experience in academic research and presentation.",
             "eligibility": [
                 "Open to school students, undergraduates, postgraduates, and research scholars.",
                 "A team can have a maximum of 2 participants.",
@@ -108,23 +92,20 @@
     },
     {
         "id": 14,
-        "name": "Brandsome",
+        "name": "Equitrix",
         "category": "Managerial",
-        "about": "Do you have a knack for innovative advertising? Are you brimming with marketing ideas and eager to showcase your talent? Brandsome is the event where you can test your creativity and convincing skills by marketing a wacky or non-existent product. Participants are required to develop an offbeat product concept that could potentially revolutionize people's lives. The challenge lies not only in creating the product but also in promoting it as an influential brand. Show off your imagination and creativity by zapping everyone's minds with your unique product ideas and extraordinary marketing skills.",
+        "about": "Enter Equitrix, the electrifying world of bulls, bears, and brilliant trades. Test your market moves, outsmart the crowd, and build the sharpest portfolio on paper. No real money. Just real adrenaline.",
         "fee": 0,
-        "date": "2024-10-25",
+        "date": "2025-10-12",
         "img": "https://res.cloudinary.com/dih6gwkau/image/upload/v1725832738/brandsome_eit9bd.jpg",
-        "url": "https://unstop.com/competitions/brandsome-infotsav24-atal-bihari-vajpayee-indian-institute-of-information-technology-and-management-1148120",
+        "url": "",
         "prize": "15k",
         "contact": [
             {
-                "name": "Uajjawal Sharma",
-                "phone": "8769445541",
-                "email": "infotsav@iiitm.ac.in"
             }
         ],
         "description": {
-            "overview": "Do you have a knack for innovative advertising? Are you brimming with marketing ideas and eager to showcase your talent? Brandsome is the event where you can test your creativity and convincing skills by marketing a wacky or non-existent product. Participants are required to develop an offbeat product concept that could potentially revolutionize people's lives. The challenge lies not only in creating the product but also in promoting it as an influential brand. Show off your imagination and creativity by zapping everyone's minds with your unique product ideas and extraordinary marketing skills."
+            "overview": "Enter Equitrix, the electrifying world of bulls, bears, and brilliant trades. Test your market moves, outsmart the crowd, and build the sharpest portfolio on paper. No real money. Just real adrenaline."
         }
     }
 ]
