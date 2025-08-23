@@ -6,6 +6,7 @@ interface CardData {
   title: string;
   description: string;
   url: string;
+  img: string;
 }
 
 interface DomainProps {
@@ -236,9 +237,9 @@ const Domain: React.FC<DomainProps> = ({
     `${domainName.replace(/\s+/g, "-").toLowerCase()}-card-${idx}`;
 
   // Placeholder register handler
-    // const handleRegister = (cardIdx: number) => {
-    //   alert(`Register for ${cards[cardIdx].title}`);
-    // };
+  // const handleRegister = (cardIdx: number) => {
+  //   alert(`Register for ${cards[cardIdx].title}`);
+  // };
 
   const handleRegister = (cardIdx: number) => {
     const eventUrl = cards[cardIdx].url;
@@ -311,8 +312,9 @@ const Domain: React.FC<DomainProps> = ({
               >
                 <Card
                   id={getCardId(vIdx % L)}
-                  title={card.title}
-                  description={card.description}
+                  title={virtualCards[vIdx].title}
+                  description={virtualCards[vIdx].description}
+                  img={virtualCards[vIdx].img}
                   onRegister={() => handleRegister(vIdx % L)}
                 />
               </div>
