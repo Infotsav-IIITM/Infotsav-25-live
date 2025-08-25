@@ -19,12 +19,12 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative pt-12 pb-2 px-4 min-h-screen flex items-center">
+    <section className="mt-25 pb-2 px-4 min-h-screen flex items-start">
       <div className="max-w-7xl w-full mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="flex flex-col gap-8">
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col">
               <Badge
                 variant="outline"
                 className="border-red-500 text-red-400 animate-bounce w-max"
@@ -102,7 +102,7 @@ export default function HeroSection() {
           </div>
 
           {/* Right Content - Floating Card */}
-          <div className="flex justify-end items-center h-full">
+          <div className="flex justify-center items-center h-full">
             <FloatingAmbassadorCard />
           </div>
         </div>
