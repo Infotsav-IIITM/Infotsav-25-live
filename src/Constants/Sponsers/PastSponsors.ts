@@ -59,6 +59,9 @@ import UnstopOther from '/assets/Images/Home/Sponsers/otherSponsers/unstop.png';
 import SBIOther from '/assets/Images/Home/Sponsers/titleSponsers/SBI.png';
 import UnionBank from '/assets/Images/Home/Sponsers/titleSponsers/UnionBank.png';
 
+// New Sponsers
+import GithubIcon from '/assets/Images/Home/Sponsers/currentSponsers/GithubIcon.png'
+
 export interface Sponsor {
     name: string;
     src: string;
@@ -105,7 +108,7 @@ export const PastSponsors19Page: Sponsor[] = [
     { name: 'Swiggy', src: Swiggy19 },
     { name: 'SBI', src: SBIOther },
     { name: 'UnionBank', src: UnionBank },
-    { name: 'The College Fever', src: TCF19 },
+    { name: 'Github', src: GithubIcon },
 ];
 
 // Past Sponsors from 2024
